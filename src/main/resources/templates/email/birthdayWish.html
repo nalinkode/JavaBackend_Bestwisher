@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Email</title>
+</head>
+<body>
+	<div>
+		<h4>Dear <b th:text="${user.firstName}"></b>,</h4>
+		<div>
+			<strong><h1>Wishing You Very Happy Birthday</h1></strong>
+		</div>
+		</br>
+		<div>
+			<img src='cid:birthdayImage'/>
+		</div>
+		<div style='margin-top: 15px;'>
+			<h4>
+				Regards,<br>Best Wisher
+			</h4>
+		</div>
+	</div>
+</body>
+</html>
